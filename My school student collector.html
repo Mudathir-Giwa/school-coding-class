@@ -7,6 +7,7 @@
 </head>
 <form>
 <body>
+    <form>
     <h2><b>Student data collection app</b></h2>
     <input type="text" id="studentName" placeholder="Enter student full name">
     <input type="number" id="studentAge" placeholder="Enter student age">
@@ -23,15 +24,15 @@
    document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const name = document.getElementById("studentName").value;
-    const age = document.getElementById("studentAge").value;
-    const email = document.getElementById("studentEmail").value;
-    const grade = document.getElementById("studentGrade").value;
-    const studentID = document.getElementById("studentID").value;
-    const dateOfBirth = document.getElementById("studentDateOfBirth").value;
-    const phoneNumber = document.getElementById("studentPhoneNumber").value;
-    const city = document.getElementById("studentCity").value;
-    const gender = document.getElementById("studentGender").value;
+            const name = document.getElementById("studentName").value;
+            const age = document.getElementById("studentAge").value;
+            const email = document.getElementById("studentEmail").value;
+            const grade = document.getElementById("studentGrade").value;
+            const studentID = document.getElementById("studentID").value;
+            const dateOfBirth = document.getElementById("studentDateOfBirth").value;
+            const phoneNumber = document.getElementById("studentPhoneNumber").value;
+            const city = document.getElementById("studentCity").value;
+            const gender = document.getElementById("studentGender").value;
 
     console.log(name, age, email, grade, studentID, dateOfBirth, phoneNumber, city, gender);
     alert("Student information submitted successfully!");
