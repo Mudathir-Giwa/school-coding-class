@@ -70,7 +70,7 @@ button:hover {
             <br><br>
 
         <label for="studentAge">Age:</label>
-        <input type="number" id="studentAge" placeholder="Enter student age" required>
+        <input type="number" id="studentAge" placeholder="Enter student age" min="5" max="35" required>
         <br><br>
 
         <label for="studentEmail">Email:</label>
@@ -82,11 +82,11 @@ button:hover {
         <br><br>
 
         <label for="studentID">Student ID:</label>
-        <input type="text" id="studentID" placeholder="Enter student ID" required>
+        <input type="text" id="studentID" placeholder="Enter student ID" minlength="4" maxlength="10" required>
         <br><br>
 
         <label for="studentDateOfBirth">Date of Birth:</label>
-        <input type="date" id="studentDateOfBirth" required>
+        <input type="date" id="studentDateOfBirth" max="2026-10-09" required>
         <br><br>
 
         <label for="studentPhoneNumber">Phone Number:</label>
@@ -97,7 +97,7 @@ button:hover {
         <input type="text" id="studentCity" placeholder="Enter student city" required>
         <br><br>
 
-        <select id="studentGender">
+        <select id="studentGender" required>
             <option value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
