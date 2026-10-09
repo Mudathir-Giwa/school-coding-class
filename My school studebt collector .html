@@ -29,7 +29,7 @@ form {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-input {
+input , select {
     width: 100%;
     padding: 11px;
     margin-bottom: 18px;
@@ -90,7 +90,7 @@ button:hover {
         <br><br>
 
         <label for="studentPhoneNumber">Phone Number:</label>
-        <input type="tel" id="studentPhoneNumber" placeholder="Enter phone number" required>
+        <input type="tel" id="studentPhoneNumber" placeholder="Enter phone number" pattern="0[0-9]{10}" required>
         <br><br>
 
         <label for="studentCity">City:</label>
